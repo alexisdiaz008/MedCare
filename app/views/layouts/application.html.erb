@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>MedCare</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"/>
+  </head>
+
+  <body id="body" data-spy="scroll" data-target=".header">
+    <%#= render "layouts/alerts" %>
+    <%#= render "devise/sessions/signed_in" %>
+    <%= yield %>
+  </body>
+</html>
